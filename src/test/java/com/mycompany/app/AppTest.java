@@ -17,6 +17,13 @@ public class AppTest
     }
 
     @Test
+    public void testAppConstructorFalse() {
+        App app1 = new App();
+        App app2 = new App();
+        assertEquals(app1.getMessage(), "nije tacno");
+    }
+
+    @Test
     public void testAppMessage()
     {
         App app = new App();
